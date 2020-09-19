@@ -65,7 +65,7 @@ app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
             return res.status(400).json({
                 ok: false,
                 err
-            })
+            });
         }
 
         res.json({

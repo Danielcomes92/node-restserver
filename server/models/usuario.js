@@ -7,7 +7,7 @@ let rolesValidos = {
 
 const uniqueValidator = require('mongoose-unique-validator');
 
-let Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 let usuarioSchema = new Schema({
     nombre: {
@@ -50,7 +50,6 @@ usuarioSchema.methods.toJSON = function() {
 
     return userObject;
 }
-
 
 usuarioSchema.plugin(uniqueValidator, {
     message: '{PATH} debe ser unico'
