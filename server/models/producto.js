@@ -19,6 +19,10 @@ let productoSchema = new Schema({
         required: true,
         default: true
     },
+    img: {
+        type: String,
+        required: false
+    },
     categoria: {
         type: Schema.Types.ObjectId,
         ref: 'Categoria',
